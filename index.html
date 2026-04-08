@@ -307,7 +307,7 @@ tw-link:hover {
 &lt;/div&gt;
 
 &lt;div class=&quot;launch-area&quot;&gt;
-(link: &quot;▶ 播放终曲 - plogue&quot;)[
+(link: &quot;▶ 播放终曲 - chorus&quot;)[
     (if: $playerName is &quot;&quot;)[(set: $playerName to &quot;无名之人&quot;)]
     (go-to: &quot;初始章&quot;)
 ]
@@ -2600,44 +2600,67 @@ strong {
 }
 &lt;/style&gt;</tw-passagedata><tw-passagedata pid="28" name="End" tags="" position="925,2400" size="100,100">(enchant:?page,(text-colour:#eeedd7)+(bg:#3f4f5a))
 
-
-注意：本次任务包含各阵营汇合后的收集环节，请查看群公告说明完成。
-
-
-
 {
 &lt;div class=&quot;story-wrapper&quot;&gt;
 
-&lt;div class=&quot;end-message&quot;&gt;
-以上为plogue2全部内容，感谢你的参与！
-&lt;/div&gt;
+  &lt;div class=&quot;mission-notice&quot;&gt;
+    &lt;div class=&quot;notice-icon&quot;&gt;⚠️ MISSION NOTICE&lt;/div&gt;
+    &lt;div class=&quot;notice-text&quot;&gt;
+      注意：本次任务包含各阵营汇合后的收集环节，请查看群公告说明完成。
+    &lt;/div&gt;
+  &lt;/div&gt;
 
-&lt;hr class=&quot;simple-divider&quot;&gt;
+  &lt;div class=&quot;end-message&quot;&gt;
+    以上为chorus全部内容，感谢你的参与！
+  &lt;/div&gt;
 
-&lt;div class=&quot;end-sub&quot;&gt;
-我们的故事仍在继续。
-&lt;/div&gt;
+  &lt;hr class=&quot;simple-divider&quot;&gt;
 
-&lt;div class=&quot;restart-area&quot;&gt;
-  (link-reveal-goto: &quot;▶ 返回&quot;, &quot;首页&quot;)[(restart:)]
-&lt;/div&gt;
+  &lt;div class=&quot;end-sub&quot;&gt;
+    我们的故事仍在继续。
+  &lt;/div&gt;
+
+  &lt;div class=&quot;restart-area&quot;&gt;
+    (link-reveal-goto: &quot;▶ 返回首页&quot;, &quot;首页&quot;)[(restart:)]
+  &lt;/div&gt;
 
 &lt;/div&gt;
 }
 
 &lt;style&gt;
-/* 既然你已经有了全局 CSS，这里只需要负责垂直间距的排版 */
-
 .story-wrapper {
     text-align: center;
     max-width: 620px;
     margin: 0 auto;
-    padding-top: 25vh; /* 依然建议保持较大的顶部留白，让致谢处于视觉中心 */
+    padding-top: 15vh;
+}
+
+/* 公告提醒框装修 */
+.mission-notice {
+    background: rgba(238, 237, 215, 0.08);
+    border: 1px dashed rgba(238, 237, 215, 0.3);
+    padding: 20px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+}
+
+.notice-icon {
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+.notice-text {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #f39c12; /* 使用醒目的橙黄色微调 */
 }
 
 .end-message {
-    /* 这里不需要写 font-size，它会自动套用全局的 17px */
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .simple-divider {
@@ -2648,12 +2671,23 @@ strong {
 }
 
 .end-sub {
-    opacity: 0.7; /* 稍微调淡一点，做出视觉层级 */
+    opacity: 0.7;
     margin-bottom: 60px;
+    font-style: italic;
 }
 
 .restart-area {
     margin-top: 20px;
+}
+
+tw-link {
+    font-weight: bold;
+    color: #eeedd7 !important;
+    text-decoration: none !important;
+}
+
+tw-link:hover {
+    opacity: 0.6;
 }
 &lt;/style&gt;</tw-passagedata><tw-passagedata pid="29" name="结局3" tags="" position="1000,2000" size="100,100">(enchant:?page,(text-colour:#eeedd7)+(bg:#3f4f5a))
 
