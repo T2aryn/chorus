@@ -5085,48 +5085,7 @@ tw-link {
 tw-link:hover {
     opacity: 0.7;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="56" name="层2-区域1.2" tags="" position="1925,1425" size="100,100">检定：中等
-if≥12
-你继续翻找着书架上的内容，发现了一本很突兀的拼贴本，像是被人偷偷藏在里面。里面夹着剪报、手抄片段、甚至还有几张画满标记的地图。大部分是关于回响纪教会的一些……小道消息。有些像是故意散播的流言，有些则像是某个执着的记录者四处搜罗来的隐秘。
-
-报纸剪报（已泛黄，边角有烧焦痕迹）：
-
-《永生之仪：是恩赐还是诅咒？》
-据匿名修女透露，源初谧所的永生仪式并不像教会宣称的那般神圣。仪式核心——那棵被称作“梦源”的古树，会有形态诡异的怪物从树根或树洞中爬出。有传言称，这些怪物正是接受永生仪式后异化的人。教会将这类事件严密封锁，将“蒙召者”安置于偏远的静修院中，此后便再无音讯。
-
-“神选者并非‘选出’的”
-源初谧所的最高领袖被称为“神选者”，但知情者称，所谓的“神选”不过是血缘的遮羞布。埃德塞家族的魔力水平向来平庸，根本配不上神选之名，于是他们编造了“神明托梦”的说辞，用以掩盖家族世袭的真相。如今的索拉恩就是最好的证明——一个二流草包，靠着姓氏坐在不该坐的位置上。
-
-手抄片段（字迹潦草，像是匆忙写下的）：
-
-“梦境的代价”
-明晰修会鼓励成员在梦中保持清醒，以此塑造自我。但长期处于清醒梦状态的人，往往分不清梦境与现实的边界。一位名叫埃莉诺的修会成员，据说从梦中带回了不属于这个世界的知识，但也有人因此彻底迷失——醒来后不会说话，只会反复书写同一个符号。
-
-“无回之声的热潮”
-近期噪响纪流传起关于神明“无回之声”的消息。起因是融合派信徒贝希玛刻制了一张名为“终曲”的CD，用作宣传。据说每个听过这张CD的人，都会听到独一无二的旋律——与自身最深处的所思所想完全共鸣。是神迹，还是精心设计的骗局，尚无定论。
-
-“骨铃的秘密”
-亡梦巡礼主持葬礼时使用的骨铃，据传并非普通的法器。每一枚骨铃都由逝者的一小块遗骨磨制而成，仪式中骨铃的声响，实际上是逝者灵魂最后的低语。教派的高阶成员——据说包括一位名叫莫里斯的司仪——能够从这些低语中读取死者生前的记忆，包括那些至死不愿吐露的秘密。
-
-“被抹去的神”
-回响纪曾有一位神明，祂的教义既不崇拜生命，也不拥抱死亡，而是主张“永恒的回响”——让每一个瞬间无限重复。祂的信徒被称为“守钟人”。后来这位神被从所有官方典籍中抹去，原因不明。只在某些极老的抄本角落，还能看到祂的符号：一个没有指针的钟面。
-
-
-
-if＜12
-你继续翻找着书架上的内容，没有其他值得注意的了。
-
-      &lt;span class=&quot;item-get&quot;&gt;获得物品：传送装置实验记录&lt;/span&gt;
-    &lt;/div&gt;
-  ]
-
-  &lt;hr class=&quot;simple-divider-dark&quot;&gt;
-
-  &lt;div class=&quot;choice-container&quot;&gt;
-    [[▶ 返回-&gt;负一层]]
-  &lt;/div&gt;
-  
-  
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="56" name="层2-区域1.2" tags="" position="1925,1425" size="100,100">(enchant: ?page, (text-colour: #3c3c6d) + (bg: #dee0d7))
 
 {
 &lt;div class=&quot;story-wrapper&quot;&gt;
@@ -5137,22 +5096,74 @@ if＜12
     D20 投掷结果：&#39;&#39;$roll&#39;&#39;
   &lt;/div&gt;
 
-  (if: $roll &gt;= 11)[
+  (if: $roll &gt;= 12)[
     &lt;div class=&quot;result-success&quot;&gt;
-      &#39;&#39;检定成功！&#39;&#39;&lt;br&gt;
-      你成功使用记录仪收集到了新的数据。&lt;br&gt;&lt;br&gt;
-      &lt;span class=&quot;item-get&quot;&gt;获得物品：数据记录&lt;/span&gt;
+      &#39;&#39;检定成功！&#39;&#39;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;narrative-block&quot;&gt;
+      你继续翻找着书架上的内容，发现了一本很突兀的拼贴本，像是被人偷偷藏在里面。里面夹着剪报、手抄片段、甚至还有几张画满标记的地图。大部分是关于回响纪教会的一些……小道消息。有些像是故意散播的流言，有些则像是某个执着的记录者四处搜罗来的隐秘。
+    &lt;/div&gt;
+
+    &lt;div class=&quot;scrapbook-deco&quot;&gt;
+      
+      &lt;div class=&quot;clip-block&quot;&gt;
+        &lt;p class=&quot;meta-tag&quot;&gt;报纸剪报（已泛黄，边角有烧焦痕迹）：&lt;/p&gt;
+        
+        &lt;div class=&quot;news-entry&quot;&gt;
+          &lt;p&gt;&lt;strong&gt;《永生之仪：是恩赐还是诅咒？》&lt;/strong&gt;&lt;br&gt;
+          据匿名修女透露，源初谧所的永生仪式并不像教会宣称的那般神圣。仪式核心——那棵被称作“梦源”的古树，会有形态诡异的怪物从树根或树洞中爬出。有传言称，这些怪物正是接受永生仪式后异化的人。教会将这类事件严密封锁，将“蒙召者”安置于偏远的静修院中，此后便再无音讯。&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;news-entry&quot;&gt;
+          &lt;p&gt;&lt;strong&gt;“神选者并非‘选出’的”&lt;/strong&gt;&lt;br&gt;
+          源初谧所的最高领袖被称为“神选者”，但知情者称，所谓的“神选”不过是血缘的遮羞布。埃德塞家族的魔力水平向来平庸，根本配不上神选之名，于是他们编造了“神明托梦”的说辞，用以掩盖家族世袭的真相。如今的索拉恩就是最好的证明——一个二流草包，靠着姓氏坐在不该坐的位置上。&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;note-block&quot;&gt;
+        &lt;p class=&quot;meta-tag&quot;&gt;手抄片段（字迹潦草，像是匆忙写下的）：&lt;/p&gt;
+        
+        &lt;div class=&quot;handwritten-entry&quot;&gt;
+          &lt;p&gt;&lt;strong&gt;“梦境的代价”&lt;/strong&gt;&lt;br&gt;
+          明晰修会鼓励成员在梦中保持清醒，以此塑造自我。但长期处于清醒梦状态的人，往往分不清梦境与现实的边界。一位名叫埃莉诺的修会成员，据说从梦中带回了不属于这个世界的知识，但也有人因此彻底迷失——醒来后不会说话，只会反复书写同一个符号。&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;handwritten-entry&quot;&gt;
+          &lt;p&gt;&lt;strong&gt;“无回之声的热潮”&lt;/strong&gt;&lt;br&gt;
+          近期噪响纪流传起关于神明“无回之声”的消息。起因是融合派信徒贝希玛刻制了一张名为“终曲”的CD，用作宣传。据说每个听过这张CD的人，都会听到独一无二的旋律——与自身最深处的所思所想完全共鸣。是神迹，还是精心设计的骗局，尚无定论。&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;handwritten-entry&quot;&gt;
+          &lt;p&gt;&lt;strong&gt;“骨铃的秘密”&lt;/strong&gt;&lt;br&gt;
+          亡梦巡礼主持葬礼时使用的骨铃，据传并非普通的法器。每一枚骨铃都由逝者的一小块遗骨磨制而成，仪式中骨铃的声响，实际上是逝者灵魂最后的低语。教派的高阶成员——据说包括一位名叫莫里斯的司仪——能够从这些低语中读取死者生前的记忆，包括那些至死不愿吐露的秘密。&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;handwritten-entry&quot;&gt;
+          &lt;p&gt;&lt;strong&gt;“被抹去的神”&lt;/strong&gt;&lt;br&gt;
+          回响纪曾有一位神明，祂的教义既不崇拜生命，也不拥抱死亡，而是主张“永恒的回响”——让每一个瞬间无限重复。祂的信徒被称为“守钟人”。后来这位神被从所有官方典籍中抹去，原因不明。只在某些极老的抄本角落，还能看到祂的符号：一个没有指针的钟面。&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;narrative-block&quot;&gt;
+      你合上拼贴本。这些消息真真假假，有些像是蓄意抹黑的流言，有些又透着一种不寒而栗的真实感。&lt;br&gt;&lt;br&gt;
+      问题在于——这本拼贴本，没有编号，没有索引，这些东西不应该出现在永秘阁。
+    &lt;/div&gt;
+
+    &lt;div class=&quot;item-get&quot;&gt;
+      获得物品：拼贴本
     &lt;/div&gt;
   ]
   (else:)[
     &lt;div class=&quot;result-fail&quot;&gt;
-      &#39;&#39;检定失败！&#39;&#39;&lt;br&gt;
-      你尝试使用记录仪，但操作起来笨手笨脚。不过不管怎样……总归还是收集到了一部分数据，不是吗？&lt;br&gt;&lt;br&gt;
-      &lt;span class=&quot;item-get&quot;&gt;获得物品：数据记录&lt;/span&gt;
+      &#39;&#39;检定失败！&#39;&#39;&lt;br&gt;&lt;br&gt;
+      你继续翻找着书架上的内容，没有其他值得注意的了。
     &lt;/div&gt;
   ]
 
-  &lt;hr class=&quot;simple-divider-dark&quot;&gt;
+  &lt;hr class=&quot;simple-divider-blue&quot;&gt;
 
   &lt;div class=&quot;choice-container&quot;&gt;
     [[▶ 返回-&gt;负一层]]
@@ -5162,40 +5173,85 @@ if＜12
 }
 
 &lt;style&gt;
-/* 严格复刻原始骰子盒样式，适配深色边框 */
-.dice-box {
-    border: 1px solid #151514;
-    padding: 15px;
-    margin: 20px auto;
-    width: 200px;
-    text-align: center;
-}
-
 .story-wrapper {
     text-align: center;
     max-width: 620px;
     margin: 0 auto;
-    padding-top: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
-.result-success, .result-fail {
-    margin-top: 20px;
+.narrative-block {
+    text-align: left;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.dice-box {
+    border: 1px solid #3c3c6d;
+    padding: 15px;
+    margin: 20px auto;
+    display: inline-block;
+    min-width: 200px;
+}
+
+/* 拼贴内容整体样式 */
+.scrapbook-deco {
+    text-align: left;
+    background: rgba(60, 60, 109, 0.03);
+    border: 1px solid rgba(60, 60, 109, 0.1);
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.meta-tag {
+    font-size: 0.85em;
+    font-weight: bold;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+/* 模拟剪报区 */
+.clip-block {
+    margin-bottom: 30px;
+}
+
+.news-entry {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 2px solid #3c3c6d;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* 模拟笔记区 */
+.handwritten-entry {
+    border-bottom: 1px dashed rgba(60, 60, 109, 0.2);
+    padding: 15px 5px;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.handwritten-entry:last-child {
+    border-bottom: none;
 }
 
 .item-get {
-    opacity: 0.8;
     font-weight: bold;
+    margin-top: 30px;
 }
 
-.simple-divider-dark {
+.simple-divider-blue {
     border: 0;
-    border-top: 1px solid rgba(21, 21, 20, 0.2);
+    border-top: 1px solid rgba(60, 60, 109, 0.2);
     width: 60px;
     margin: 40px auto;
 }
 
-.choice-container {
-    margin-top: 40px;
+tw-link {
+    font-weight: bold;
+    color: #3c3c6d !important;
 }
 &lt;/style&gt;</tw-passagedata><tw-passagedata pid="57" name="层1-区域4" tags="" position="1800,1025" size="100,100">(enchant: ?page, (text-colour: #3c3c6d) + (bg: #dee0d7))
 
@@ -5340,56 +5396,43 @@ tw-link:hover {
 }
 &lt;/style&gt;</tw-passagedata><tw-passagedata pid="58" name="层2-区域1" tags="" position="1775,1425" size="100,100">(enchant: ?page, (text-colour: #3c3c6d) + (bg: #dee0d7))
 
-区域一：回响纪·血脉与神选
-
-这里存放着国教源初谧所的纪年与谱系。
-
-源初谧所的形成并非出于教义的统一，而是围绕一个家族的血脉逐步凝聚——埃德塞家族。世代相传的魔力与灵性天赋，使这个家族逐渐成为信仰的核心。教会的最高领袖，名义上的神选者，实际始终出自埃德塞家族的血脉。神启与血缘在此从未分离——神明选中的，永远是这个家族的人。
-
-古树是“梦源”的现实化身。据说只有核心信徒能够亲眼见到那棵树。它经历了漫长到无法计数的时光，从中获得了赐予人永生的能力。这一概念在谱系中反复出现，语焉不详，却贯穿始终。
-
-谱系最末，记载着两位引人注目的人物：索拉恩与赛琳。索拉恩擅长推算与预测，常在教会的重大决策中担任顾问。其妹赛琳则因魔力更为充沛、创造力更强，在信徒中更受欢迎。
-
-
-
 {
 &lt;div class=&quot;story-wrapper&quot;&gt;
 
   &lt;div class=&quot;narrative-block&quot;&gt;
-    你检查了一下他们睡的床。&lt;br&gt;&lt;br&gt;
-    这是常见的木架床，由铺着绿色羊毛和木板搭成。床头柜上摆着一些杂物和几盆绿植。中央还铺着一块绿色地毯作为装饰。
+    &lt;strong&gt;区域一：回响纪 · 血脉与神选&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
+    这里存放着国教源初谧所的纪年与谱系。
   &lt;/div&gt;
 
-  (set: $roll to (random: 1, 20))
-  &lt;div class=&quot;dice-box&quot;&gt;
-    [ 检定：简单 ]&lt;br&gt;
-    D20 投掷结果：&#39;&#39;$roll&#39;&#39;
+  &lt;div class=&quot;bloodline-archive&quot;&gt;
+    &lt;div class=&quot;archive-section&quot;&gt;
+      &lt;div class=&quot;section-title&quot;&gt;核心血脉：埃德塞家族&lt;/div&gt;
+      &lt;div class=&quot;section-content&quot;&gt;
+        源初谧所的形成并非出于教义的统一，而是围绕一个家族的血脉逐步凝聚——&lt;strong&gt;埃德塞家族&lt;/strong&gt;。世代相传的魔力与灵性天赋，使这个家族逐渐成为信仰的核心。教会的最高领袖，名义上的神选者，实际始终出自埃德塞家族的血脉。神启与血缘在此从未分离——神明选中的，永远是这个家族的人。
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;archive-section&quot;&gt;
+      &lt;div class=&quot;section-title&quot;&gt;梦源化身：古树&lt;/div&gt;
+      &lt;div class=&quot;section-content&quot;&gt;
+        古树是“梦源”的现实化身。据说只有核心信徒能够亲眼见到那棵树。它经历了漫长到无法计数的时光，从中获得了赐予人永生的能力。这一概念在谱系中反复出现，语焉不详，却贯穿始终。
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;archive-section&quot;&gt;
+      &lt;div class=&quot;section-title&quot;&gt;谱系末端：神选双子&lt;/div&gt;
+      &lt;div class=&quot;section-content&quot;&gt;
+        记载着两位引人注目的人物：&lt;br&gt;
+        &lt;strong&gt;索拉恩&lt;/strong&gt;：擅长推算与预测，常在教会的重大决策中担任顾问。&lt;br&gt;
+        &lt;strong&gt;赛琳&lt;/strong&gt;：索拉恩之妹，因魔力更为充沛、创造力更强，在信徒中更受欢迎。
+      &lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-
-  (if: $roll &gt;= 6)[
-    &lt;div class=&quot;narrative-block&quot;&gt;
-      &#39;&#39;检定成功！&#39;&#39;&lt;br&gt;
-      你在空气中捕捉到一丝若有若无的奇异气味，隐约让人感到有些不适。循着气味找去，源头是床头柜上的香薰，乍一看很不起眼。&lt;br&gt;
-      你记得，这个东西并不在运输队的物品清单里，需要把它带回去检测一下。
-    &lt;/div&gt;
-
-    &lt;div class=&quot;item-get&quot;&gt;
-      获得物品：香薰
-    &lt;/div&gt;
-  ]
-      [[▶继续-&gt;层2-区域1.2]]
-      
-  (else:)[
-    &lt;div class=&quot;narrative-block&quot;&gt;
-      &#39;&#39;检定失败！&#39;&#39;&lt;br&gt;
-      你没发现什么值得注意的。
-    &lt;/div&gt;
-  ]
 
   &lt;hr class=&quot;simple-divider-blue&quot;&gt;
 
   &lt;div class=&quot;choice-container&quot;&gt;
-    [[▶继续-&gt;负一层]]
+    [[▶ 继续-&gt;层2-区域1.2]]
   &lt;/div&gt;
 
 &lt;/div&gt;
@@ -5400,27 +5443,45 @@ tw-link:hover {
     text-align: center;
     max-width: 620px;
     margin: 0 auto;
-    padding-top: 10vh;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
 }
 
 .narrative-block {
     margin-bottom: 25px;
+    line-height: 1.8;
 }
 
-/* 同款骰子盒样式 */
-.dice-box {
-    border: 1px solid rgba(60, 60, 109, 0.3);
-    padding: 15px;
+/* 谱系档案样式 */
+.bloodline-archive {
+    text-align: left;
+    background: rgba(60, 60, 109, 0.03);
+    border: 1px solid rgba(60, 60, 109, 0.2);
+    padding: 25px;
     margin: 20px auto;
-    display: inline-block;
-    min-width: 200px;
 }
 
-/* 同款获得物品字体设置 */
-.item-get {
+.archive-section {
+    margin-bottom: 25px;
+}
+
+.archive-section:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
     font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 20px;
+    color: #3c3c6d;
+    border-bottom: 1px solid rgba(60, 60, 109, 0.1);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 1.05em;
+}
+
+.section-content {
+    line-height: 1.7;
+    font-size: 0.95em;
+    opacity: 0.9;
 }
 
 .simple-divider-blue {
@@ -5433,7 +5494,17 @@ tw-link:hover {
 .choice-container {
     line-height: 2.5;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="59" name="层2-区域3" tags="" position="1475,1175" size="100,100">(enchant: ?page, (text-colour: #3c3c6d) + (bg: #dee0d7))
+
+tw-link {
+    font-weight: bold;
+    color: #3c3c6d !important;
+    text-decoration: none !important;
+}
+
+tw-link:hover {
+    opacity: 0.6;
+}
+&lt;/style&gt;```</tw-passagedata><tw-passagedata pid="59" name="层2-区域3" tags="" position="1475,1175" size="100,100">(enchant: ?page, (text-colour: #3c3c6d) + (bg: #dee0d7))
 
 {
 &lt;div class=&quot;story-wrapper&quot;&gt;
