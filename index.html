@@ -2902,8 +2902,9 @@ tw-link:hover {
     内容涉及跨时间、跨维度的传送测试。粗略浏览下来，你心头一跳：这项研究，或许与你上次任务中遇到的古代石盘有着千丝万缕的联系。
   &lt;/div&gt;
 
-      &lt;span class=&quot;item-get&quot;&gt;获得物品：传送装置实验记录&lt;/span&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;item-get&quot;&gt;
+    获得物品：传送装置实验记录
+  &lt;/div&gt;
 
   &lt;hr class=&quot;simple-divider-dark&quot;&gt;
 
@@ -2932,11 +2933,14 @@ tw-link:hover {
     padding: 20px;
     background: rgba(21, 21, 20, 0.05);
     border-radius: 4px;
+    text-align: left; /* 内部文字左对齐方便阅读 */
 }
 
+/* 确保内部容器也继承居中 */
 .item-get {
-    margin-top: 30px;
+    margin: 30px auto 0;
     font-weight: bold;
+    display: block;
 }
 
 .simple-divider-dark {
@@ -2948,11 +2952,19 @@ tw-link:hover {
 
 .choice-container {
     margin-top: 40px;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 tw-link {
     font-weight: bold;
+    color: #151514 !important;
     text-decoration: none !important;
+}
+
+tw-link:hover {
+    opacity: 0.6;
 }
 &lt;/style&gt;</tw-passagedata><tw-passagedata pid="33" name="顶楼" tags="" position="1100,1000" size="100,100">(enchant:?page,(text-colour:#151514)+(bg:#dbd19f))
 
